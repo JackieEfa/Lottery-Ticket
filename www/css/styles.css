@@ -1,0 +1,86 @@
+.page-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-large {
+    font-family: 'Caveat', cursive;
+}
+
+#plant-friend {
+    width: 80%;
+}
+
+#scissors,
+#water,
+#food {
+    display: none;
+}
+
+#plant path {
+    transition: 2s; /* Changes over 2 seconds in the plant path */
+}
+
+
+
+
+
+/* SVG Styles */
+
+.cls-1 {
+    stroke-dasharray: 0 0 20.05 20.05;
+}
+
+.cls-1,
+.cls-2,
+.cls-3,
+.cls-4,
+.cls-5,
+.cls-6 {
+    fill: none;
+    stroke: #fbc900;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+}
+
+.cls-2 {
+    stroke-dasharray: 0 0 21.9 21.9;
+}
+
+.cls-7 {
+    fill: #eabca0;
+}
+
+.cls-8 {
+    fill: #b6dbff;
+}
+
+.cls-9 {
+    fill: #df986d;
+}
+
+.cls-10 {
+    fill: #1bb0b1;
+}
+
+.cls-11 {
+    fill: #568b62;
+}
+
+.cls-12 {
+    fill: #764b00;
+}
+
+.cls-3 {
+    stroke-dasharray: 0 0 20.55 20.55;
+}
+
+.cls-4 {
+    stroke-dasharray: 0 0 19.4 19.4;
+}
+
+.cls-5 {
+    stroke-dasharray: 0 0 18.06 18.06;
+}

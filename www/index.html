@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!--
+        Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+            https://cordova.apache.org/docs/en/latest/
+        Some notes:
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+  <!-- <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' data: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline' fonts.googleapis.com; media-src *; img-src 'self' data: content:; font-src 'self' fonts.gstatic.com ;"> -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Hello World</title>
+</head>
+
+<body>
+  <div id="app">
+    <!-- panel components go here -->
+    <div class="panel panel-right panel-cover">
+      will update plant details here...
+    </div>
+    <div class="view view-main">
+      <!-- component will apply to all pages in view -->
+      <div class="page" data-name="home">
+        <!-- component is fixed to the page -->
+        <div class="navbar no-shadow navbar-large">
+          <div class="navbar-inner">
+            <div class="right">
+              <a href="#" class="panel-open link icon-only"><i class="icon material-icons">more_horiz</i></a>
+            </div>
+            <div class="title-large">
+              <div class="title-large-text">plant friend</div>
+            </div>
+          </div>
+        </div>
+        <div class="toolbar tabbar toolbar-bottom no-shadow">
+          <div class="toolbar-inner">
+            <a href="#" class="link" id="water-me"><i class="icon material-icons">water_drop</i></a>
+            <a href="#" class="link" id="feed-me"><i class="icon material-icons">grain</i></a>
+            <a href="#" class="link" id="trim-me"><i class="icon material-icons">content_cut</i></a>
+          </div>
+        </div>
+        <div class="page-content">
+          <svg id="plant-friend" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 785.19 1265.05">
+            <g id="pot">
+              <ellipse class="cls-7" cx="372.19" cy="1057.5" rx="168.5" ry="29.5" />
+              <path id="soil" class="cls-12"
+                d="M496.09,1078.95c-35.92,4.79-77.87,7.55-122.38,7.55-49.41,0-95.67-3.4-134.02-9.21l.54-.57c3.58-8,57.7-14.22,127.13-14.22s129.95,7.16,129.95,16l-1.22,.45Z" />
+              <path class="cls-9"
+                d="M540.69,1057.5c0,16.29-76.54,29.5-168.5,29.5s-168.5-13.21-168.5-29.5l7,39c0,16.29,69.54,29.5,161.5,29.5s162.5-13.21,162.5-29.5l6-39Z" />
+              <path class="cls-7"
+                d="M223,1107.98c23.87,10.59,80.23,18.02,149.2,18.02s124.31-7.23,149.02-17.58l-38.38,137.35c-1.64,9.23-50.56,19.27-110.64,19.27s-104-8.05-109.64-19.27l-39.56-137.79Z" />
+            </g>
+            <g id="sun">
+              <g>
+                <line class="cls-6" x1="639.19" y1="27" x2="630.98" y2="32.7" />
+                <line class="cls-5" x1="616.14" y1="42.99" x2="504.83" y2="120.16" />
+                <line class="cls-6" x1="497.41" y1="125.3" x2="489.19" y2="131" />
+              </g>
+              <g>
+                <line class="cls-6" x1="671.69" y1="49.5" x2="666.99" y2="58.32" />
+                <line class="cls-1" x1="657.55" y1="76.02" x2="605.62" y2="173.33" />
+                <line class="cls-6" x1="600.9" y1="182.18" x2="596.19" y2="191" />
+              </g>
+              <g>
+                <line class="cls-6" x1="712.69" y1="65.5" x2="711.02" y2="75.36" />
+                <line class="cls-3" x1="707.57" y1="95.61" x2="688.6" y2="207.01" />
+                <line class="cls-6" x1="686.87" y1="217.14" x2="685.19" y2="227" />
+              </g>
+              <g>
+                <line class="cls-6" x1="615.69" y1="2.5" x2="605.78" y2="3.78" />
+                <line class="cls-4" x1="586.54" y1="6.28" x2="442.23" y2="24.97" />
+                <line class="cls-6" x1="432.61" y1="26.22" x2="422.69" y2="27.5" />
+              </g>
+              <g>
+                <line class="cls-6" x1="754.69" y1="69.5" x2="756.31" y2="79.37" />
+                <line class="cls-2" x1="759.85" y1="100.98" x2="779.31" y2="219.83" />
+                <line class="cls-6" x1="781.08" y1="230.63" x2="782.69" y2="240.5" />
+              </g>
+            </g>
+            <g id="water">
+              <path class="cls-8"
+                d="M472.28,990.78c0,5.59-3.49,9.35-7.8,9.35s-7.8-3.76-7.8-9.35c0-8.71,7.8-22.75,7.8-22.75,0,0,7.8,14.04,7.8,22.75Z" />
+              <path class="cls-8"
+                d="M492.69,972.64c0,5.59-3.49,9.35-7.8,9.35s-7.8-3.76-7.8-9.35c0-8.71,7.8-22.75,7.8-22.75,0,0,7.8,14.04,7.8,22.75Z" />
+              <path class="cls-8"
+                d="M476.82,946.56c0,5.59-3.49,9.35-7.8,9.35s-7.8-3.76-7.8-9.35c0-8.71,7.8-22.75,7.8-22.75,0,0,7.8,14.04,7.8,22.75Z" />
+            </g>
+            <g id="food">
+              <circle class="cls-10" cx="287.31" cy="869.96" r="4.54" />
+              <circle class="cls-10" cx="282.31" cy="819.96" r="4.54" />
+              <circle class="cls-10" cx="297.31" cy="827.96" r="4.54" />
+              <circle class="cls-10" cx="302.31" cy="863.96" r="4.54" />
+              <circle class="cls-10" cx="278.23" cy="853.88" r="4.54" />
+              <circle class="cls-10" cx="308.23" cy="842.88" r="4.54" />
+              <circle class="cls-10" cx="273.23" cy="837.88" r="4.54" />
+              <circle class="cls-10" cx="293.15" cy="847.01" r="4.54" />
+            </g>
+            <g id="scissors">
+              <path
+                d="M242.56,979.03c-.15,0-.29,.02-.44,.02l-1.78,.08-.06-.23c-4.34-.62-8.26-3.42-10.11-7.75-2.8-6.59,.27-14.21,6.86-17.01,6.59-2.8,14.21,.27,17.01,6.86,1.74,4.1,1.21,8.59-1.02,12.08l77.38-2.9-7.49,5.06-80.35,3.78Zm7.74-16.43c-1.92-4.52-7.15-6.63-11.67-4.7s-6.63,7.15-4.7,11.67c1.92,4.52,7.15,6.63,11.67,4.7,4.52-1.92,6.63-7.15,4.7-11.67Z" />
+              <path
+                d="M266.49,991.6c2.8,6.59-.27,14.21-6.86,17.01s-14.21-.27-17.01-6.86c-2.58-6.07-.17-13,5.37-16.25l58.09-47.68,9.3-.9-56.54,47.53c3.32,1.16,6.17,3.65,7.65,7.15Zm-3.8,1.62c-1.91-4.49-7.1-6.59-11.6-4.67s-6.59,7.1-4.67,11.6,7.1,6.59,11.6,4.67,6.59-7.1,4.67-11.6Z" />
+            </g>
+            <g id="plant"> <!--Selects from this div plant from jquery-->
+              <g id="trim">
+                <path class="cls-11"
+                  d="M363.93,1078.47c-2.99-24.71-10.6-48.62-21.7-70.87-11.2-22.45-25.83-43.12-42.57-61.78-17.39-19.39-37.13-36.47-58.26-51.66-22.92-16.48-47.36-30.73-72.41-43.69-25.17-13.03-50.97-24.79-76.82-36.39-3.21-1.44-6.42-2.88-9.62-4.31-1.75-.78-3.28,1.8-1.51,2.59,25.71,11.51,51.42,23.03,76.6,35.68,24.92,12.52,49.34,26.14,72.42,41.84,21.71,14.76,42.15,31.37,60.33,50.34,17.25,18.01,32.48,38.03,44.53,59.89,11.87,21.52,20.54,44.85,24.67,69.11,.52,3.08,.97,6.16,1.35,9.26,.23,1.89,3.23,1.92,3,0h0Z" />
+                <path class="cls-11"
+                  d="M104.39,822.34c1.06-26.43,13.94-51.85,5.51-77.13-5.32-15.98-18.11-25.98-30.26-28.06s-23.83,2.4-34.86,7.72c-14.2,6.85-28.46,15.73-37.34,32.18-8.88,16.44-10.76,42.32-.5,60.32,9.79,17.18,26.94,21.89,41.59,20.16,14.65-1.73,28.57-8.37,43.44-7.94" />
+              </g>
+              <path class="cls-11"
+                d="M369.03,1079.65c1.85-31.99,3.7-63.99,4.47-96.03,.77-31.97,.46-63.99-2.02-95.89-2.26-29.04-6.32-57.96-12.95-86.33-6.24-26.67-14.71-52.83-25.86-77.86s-24.86-48.54-41.55-70.06c-2.09-2.7-4.23-5.36-6.41-7.98-1.23-1.49-3.35,.64-2.12,2.12,17.38,20.97,31.83,44.25,43.52,68.82s20.73,50.69,27.44,77.19c7,27.68,11.49,55.93,14.1,84.35,2.89,31.42,3.56,63.01,3.07,94.55-.5,31.76-2.18,63.49-4,95.2-.23,3.98-.46,7.96-.69,11.93-.11,1.93,2.89,1.92,3,0h0Z" />
+              <path class="cls-11"
+                d="M369.56,1074.36c-1.16-40.86-4.63-81.63-10.35-122.11-5.75-40.67-13.79-81.02-24.03-120.81-10.2-39.62-22.58-78.68-37.08-116.93-14.48-38.21-31.05-75.64-49.65-112.03-18.62-36.42-39.27-71.81-61.87-105.91-2.84-4.28-5.71-8.54-8.6-12.78-1.08-1.58-3.68-.09-2.59,1.51,22.98,33.64,44.06,68.56,63.12,104.57,19.16,36.19,36.31,73.45,51.33,111.54,14.94,37.9,27.8,76.62,38.51,115.93,10.7,39.31,19.24,79.2,25.55,119.45,6.34,40.45,10.4,81.26,12.13,122.16,.22,5.13,.39,10.26,.54,15.4,.05,1.93,3.05,1.93,3,0h0Z" />
+              <path class="cls-11"
+                d="M378.69,1080c-2.15-39.54-3.25-79.14-3.52-118.74-.27-40.06,.3-80.12,1.5-120.17,1.2-40.23,3.02-80.43,5.27-120.61,2.24-40.05,4.91-80.07,7.81-120.07,2.87-39.53,5.97-79.04,9.12-118.54,.38-4.82,.77-9.63,1.15-14.45,.15-1.92-2.85-1.91-3,0-3.15,39.42-6.27,78.85-9.19,118.29-2.96,39.96-5.7,79.93-8.04,119.93-2.35,40.17-4.3,80.38-5.65,120.6-1.34,40.08-2.09,80.18-2.03,120.28,.07,39.67,.93,79.34,2.84,118.97,.23,4.84,.48,9.68,.75,14.51,.1,1.92,3.11,1.93,3,0h0Z" />
+              <path class="cls-11"
+                d="M197.6,492.96c23.63-6.57,33.12-38.39,22.46-60.47-10.66-22.08-35.21-34.48-59.42-38.38-5.44-.87-11.1-1.39-16.37,.18-5.57,1.66-10.22,5.49-14.34,9.59-18.58,18.49-29.39,44.55-29.36,70.76,0,5.26,.49,10.72,3.1,15.28,4.65,8.14,14.68,11.34,23.93,12.85,17.28,2.83,35.12,2.15,52.13-1.99" />
+              <path class="cls-11"
+                d="M317.24,678.26c17.3-3.82,31.51-18.99,34.19-36.5,1.13-7.37,.34-15.1-2.78-21.87-7.29-15.8-26.58-23.76-43.81-21.26s-32.19,13.69-43.07,27.27c-10.65,13.29-18,32.49-9.11,47.02,11.13,18.2,37.82,15.96,58.65,11.32" />
+              <path class="cls-11"
+                d="M394.52,490.5c-36.42-8.66-61.92-49.26-53.9-85.82,2.11-9.63,6.51-19.19,14.37-25.13,8.38-6.34,19.43-7.73,29.92-8.19,14.04-.61,28.71,.23,41.02,7.02,19.58,10.8,28.97,36.14,23.31,57.77-5.66,21.63-24.67,38.55-46.35,44.05" />
+              <g>
+                <path class="cls-11"
+                  d="M385.3,1074.22c-2.97-42.4,1.59-84.94,11.61-126.18,10.1-41.58,25.47-81.74,43.55-120.47,18.21-39,39.19-76.63,61.18-113.61s42.32-69.96,66.62-102.81c24.08-32.56,51.16-63.17,82.77-88.62,4.1-3.3,8.27-6.5,12.51-9.62,1.54-1.13,.04-3.74-1.51-2.59-32.8,24.1-61.07,53.67-86.03,85.71-25.28,32.44-47.33,67.23-68.55,102.41-22.41,37.16-44.01,74.88-63.02,113.91-18.88,38.75-35.28,78.88-46.68,120.5-11.17,40.79-17.39,83.08-16.23,125.43,.15,5.32,.42,10.64,.79,15.95,.13,1.92,3.13,1.93,3,0h0Z" />
+                <path class="cls-11"
+                  d="M639.85,526.57c-7.38-6.95-14.56-15.2-15.7-25.27-1.89-16.77,13.83-30.63,29.81-36.06,24.69-8.39,53.38-3.84,74.27,11.76,4.22,3.15,8.35,7.08,9.46,12.23,.86,4-.23,8.15-1.65,11.99-9.43,25.47-34.72,44.26-61.82,45.96-8.05,.5-16.47-.47-23.39-4.61s-12.05-11.92-11.36-19.96" />
+              </g>
+              <g>
+                <path class="cls-11"
+                  d="M386.06,1082.2c3.28-22.38,8.52-44.47,15.57-65.96,7.06-21.51,15.93-42.42,26.44-62.47,10.48-19.98,22.57-39.11,36.13-57.14,13.6-18.09,28.71-35.07,45.11-50.68,16.39-15.61,34.09-29.84,52.92-42.42,2.3-1.54,4.62-3.05,6.95-4.53,1.62-1.04,.12-3.63-1.51-2.59-19.24,12.28-37.4,26.23-54.25,41.62-16.76,15.3-32.23,32.01-46.24,49.86s-26.75,37.05-37.76,57.06c-10.93,19.87-20.24,40.64-27.79,62.02-7.59,21.53-13.37,43.71-17.16,66.23-.46,2.73-.89,5.46-1.29,8.2-.28,1.89,2.61,2.7,2.89,.8h0Z" />
+                <path class="cls-11"
+                  d="M546.08,810.38c-.66-17.1,3.42-35.1,14.91-47.78s31.41-18.43,46.51-10.38c16.11,8.59,21.86,28.72,23.65,46.89,.91,9.2,1.11,18.94-3.12,27.16-4.62,8.99-13.92,14.76-23.54,17.87-12.18,3.94-26.2,4.07-37.13-2.6-10.93-6.66-17.4-21.19-12.4-32.98" />
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="cordova.js"></script>
+  <script src="js/framework7-bundle.min.js"></script>
+  <script src="js/jquery-3.6.1.min.js"></script>
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
