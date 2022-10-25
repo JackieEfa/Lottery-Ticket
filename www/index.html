@@ -35,8 +35,9 @@
   <meta name="color-scheme" content="light dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong&effect=fire">
   <link rel="stylesheet" href="css/framework7-bundle.min.css">
   <link rel="stylesheet" href="css/styles.css">
   <title>Hello World</title>
@@ -44,39 +45,45 @@
 
 <body>
   <div id="app">
-    <!-- panel components go here -->
-    <div class="panel panel-right panel-cover">
-      will update plant details here...
-    </div>
     <div class="view view-main">
       <!-- component will apply to all pages in view -->
       <div class="page" data-name="home">
         <!-- component is fixed to the page -->
         <div class="navbar no-shadow navbar-large">
-          <div class="navbar-inner">
-            <div class="right">
-              <a href="#" class="panel-open link icon-only"><i class="icon material-icons">more_horiz</i></a>
-            </div>
             <div class="title-large">
-              <div class="title-large-text">plant friend</div>
+              <div class="title-large-text font-effect-fire">Lottery Tickets</div>
             </div>
-          </div>
         </div>
 
+        <div>
+          <div class="title-large Lottotitle">WIN 7BILLION DOLLARS!</div>
+          <div class="title-large Lottosub">7, 8, 3, 0 (can you match these numhers?)</div>
+        </div>
+
+        <!--add randomized phrases to appear at the bottome saying " you lose, wooow, better luck next time, etc"-->
+        
+        <!-- SLots - https://codepen.io/AdrianSandu/pen/MyBQYz-->
         <div id="stage" class="perspective-on">
           <div id="rotate">
               <div id="ring1" class="ring"></div>
               <div id="ring2" class="ring"></div>
               <div id="ring3" class="ring"></div>
               <div id="ring4" class="ring"></div>
-              <!-- <div id="ring5" class="ring"></div> -->
+              <!-- <div id="ring5" class="ring"></div> this makes a js error cause of removed ring -->
         </div>
 
       </div>
 
       <div>
-        <button class="go">Start spinning</button>
+        <button class="button1 go">Take A Chance! Test Your Luck!</button>
+    </div>
 
+    <div> <!--need this going across or if not just at the bottom and top..-->
+      <p class="test2 pcolor title-large">LOTTERY WIN LOSE LOTTERY LOTTERY WIN LOSE LOTTERY LOTTERY WIN LOSE LOTTERY </p>
+    </div>
+
+    <div> <!--not showing up but need to be on the right-->
+      <p class="test1 pcolor title-large">LOTTERY WIN LOSE LOTTERY LOTTERY WIN LOSE LOTTERY LOTTERY WIN LOSE LOTTERY </p>
     </div>
 
     </div>
