@@ -74,12 +74,14 @@ $(document).ready(function() {
  	createSlots($('#ring2'));
  	createSlots($('#ring3'));
  	createSlots($('#ring4'));
- 	createSlots($('#ring5'));
+ 	// createSlots($('#ring5')); not needed 
 
  	// hook start button
  	$('.go').on('click',function(){
  		var timer = 2;
  		spin(timer);
+
+		if
  	})
 
  	// hook perspective
