@@ -231,3 +231,8 @@ label {
   bottom: 8px;
   left: 0px;
 }
+
+q {
+  font-size: large;
+  font-style: italic;
+}

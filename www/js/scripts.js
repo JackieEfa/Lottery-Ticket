@@ -5,6 +5,17 @@ var app = new Framework7({
   });
   var mainView = app.views.create('.view-main')
 
+function changequote() {
+
+var modivation = ["I'm worth it","Thanks for trying", "Be leaf in yourself", "Sucks to Suck"];
+var indexnumber = Math.floor(Math.random() * modivation.length);
+console.log(indexnumber);
+
+$("#losing").text(modivation[indexnumber])
+}
+
+changequote(); 
+
   const SLOTS_PER_REEL = 12;
 // radius = Math.round( ( panelWidth / 2) / Math.tan( Math.PI / SLOTS_PER_REEL ) ); 
 // current settings give a value of 149, rounded to 150
@@ -81,7 +92,6 @@ $(document).ready(function() {
  		var timer = 2;
  		spin(timer);
 
-		if
  	})
 
  	// hook perspective
