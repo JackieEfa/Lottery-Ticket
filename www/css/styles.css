@@ -40,6 +40,11 @@ body {
   font-size: 30px;
 }
 
+.LOTT {
+  font-size: larger;
+  background-color: rgb(255, 129, 129);
+}
+
 .titlecent {
   text-align: center;
   text-size-adjust: 20%;
