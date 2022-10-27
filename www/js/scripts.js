@@ -7,7 +7,7 @@ var app = new Framework7({
 
 function changequote() {
 
-var modivation = ["I'm worth it","Thanks for trying", "Be leaf in yourself", "Sucks to Suck"];
+var modivation = ["Gambling... Again?","This time you got it!  or not...", "Personally I think you have an addiction", "Get some help, seriously"];
 var indexnumber = Math.floor(Math.random() * modivation.length);
 console.log(indexnumber);
 
