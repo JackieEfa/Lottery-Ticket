@@ -7,7 +7,7 @@ var app = new Framework7({
 
 function changequote() {
 
-var modivation = ["Gambling... Again?","This time you got it!  or not...", "Personally I think you have an addiction", "Get some help, seriously"];
+var modivation = ["There is more to life than this","You have friends... They miss the old you...", "Personally I think you have an addiction", "Get some help, Seriously"];
 var indexnumber = Math.floor(Math.random() * modivation.length);
 console.log(indexnumber);
 
@@ -92,6 +92,13 @@ $(document).ready(function() {
  		var timer = 2;
  		spin(timer);
 
+		 var playSound = document.getElementById('spinning'),
+		 spinsound = document.getElementById('lottosound')
+		 spinsound.addEventListener('click', function(){
+		   lottosound.playSound();
+		 },false 
+		 );
+		 //not working ..
  	})
 
  	// hook perspective
@@ -100,3 +107,11 @@ $(document).ready(function() {
  	})	
  });
   
+      // DOM events for About popup
+      $('.popup-about').on('popup:open', function (e) {
+        console.log('About popup open');
+      });
+      $('.popup-about').on('popup:opened', function (e) {
+        console.log('About popup opened');
+      });
+

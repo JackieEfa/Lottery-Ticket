@@ -45,6 +45,7 @@
 
 <body>
   <div id="app">
+
     <div class="view view-main">
       <!-- component will apply to all pages in view -->
       <div class="page" data-name="home">
@@ -57,7 +58,23 @@
 
         <div>
           <div class="title-large Lottotitle pad"> MATCH THE NUMBERS WIN 7 BILLION DOLLARS!</div>
-          <div class="title-large Lottosub pad1 "> <b> 7, 8, 3, 0 </b></div>
+          <div class="title-large Lottosub pad1 "> <b> 1, 0, 3, 1 </b></div>
+        </div>
+
+        <p>
+          <a class="button2 button-fill popup-open" href="#" data-popup=".popup-about">About The Lottery</a>
+        </p>
+    
+        <div class="popup popup-about">
+          <div class="block">
+            <p><b> Your Gambling Addiction</b></p>
+            <p><a class="link popup-close button2" href="#">Close</a></p>
+            <p> The lottery is technically gambling and gambling can turn into an addiction. Though it’s not likely that this “gateway” to gambling will turn into a full-blown gambling addiction, you should still be cautious if you find yourself consumed with trying to win the lottery. 
+              If you’ve got an addictive personality or a history of addiction in your family, playing the lottery might not be the best activity to indulge in. After all, you don’t want to become so obsessed with winning that you blow tons of money trying.
+            </p>
+            <p> At this point, as a inanimate object, I am worried about you. Your chances of winning are 0 to none. Stop it. Get some help :)</p>
+          <img class="imgbox" src="img/k.png" >
+          </div>
         </div>
 
         <!--add randomized phrases to appear at the bottome saying " you lose, wooow, better luck next time, etc"-->
@@ -74,9 +91,14 @@
 
       </div>
 
+      <audio id="lottosound" preload="auto">
+        <source src="audio/mixkit-score-casino-counter-1998.wav"/>
+      </audio>
+
       <div>
-        <button onclick="changequote()" class="button1 go">Take A Chance! Test Your Luck!</button>
-    </div>
+        <button onclick="changequote()" id="spinning" class="button1 go">Take A Chance! Test Your Luck!</button>
+    
+      </div>
 
     <div class="padding pad3">
       <q id="losing">Quote Here</q> <!-- do this for fonts maybe ++ randomizer-->
@@ -84,12 +106,13 @@
 
     </div>
 
+
     <div> <!--need this going across or if not just at the bottom and top..-->
-      <p class="test2 pcolor title-large bottomleft">WIN LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE  </p>
+      <p class="test2 pcolor title-large bottomleft">WIN LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY   </p>
     </div>
 
     <div> <!--not showing up but need to be on the right-->
-      <p class="test1 pcolor title-large bottomright">WIN LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE </p>
+      <p class="test1 pcolor title-large bottomright">WIN LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY WIN LOTTERY LOSE LOTTERY  </p>
     </div>
 
     </div>
