@@ -7,11 +7,24 @@ var app = new Framework7({
 
 function changequote() {
 
-var modivation = ["There is more to life than this","You have friends... They miss the old you...", "Personally I think you have an addiction", "Get some help, Seriously"];
+var modivation = ["There is more to life than this","You have friends... They miss the old you...", "Personally, I think you have an addiction", "Get some help, Seriously"];
 var indexnumber = Math.floor(Math.random() * modivation.length);
 console.log(indexnumber);
 
 $("#losing").text(modivation[indexnumber])
+
+// var playSound = document.getElementById('spinning'),
+// 		 spinsound = document.getElementById('lottosound')
+// 		 spinsound.addEventListener('click', function(){
+// 		   lottosound.playSound();
+// 		 },false 
+// 		 );
+// // 		 //not working ..
+
+var audio = new Audio("audio/mixkit-score-casino-counter-1998.wav");
+
+audio.play();
+
 }
 
 changequote(); 
@@ -91,14 +104,6 @@ $(document).ready(function() {
  	$('.go').on('click',function(){
  		var timer = 2;
  		spin(timer);
-
-		 var playSound = document.getElementById('spinning'),
-		 spinsound = document.getElementById('lottosound')
-		 spinsound.addEventListener('click', function(){
-		   lottosound.playSound();
-		 },false 
-		 );
-		 //not working ..
  	})
 
  	// hook perspective
